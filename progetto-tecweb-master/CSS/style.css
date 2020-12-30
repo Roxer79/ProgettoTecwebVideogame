@@ -1,0 +1,709 @@
+html {
+    font-family: sans-serif;
+}
+
+a {
+    color: #4056a1;
+}
+
+.JavaWarning {
+    color: #ff0000;
+}
+
+.BackPage {
+    width: 100%;
+    float: left;
+}
+
+.MovePageSucc {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.MovePagePrec {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+html {
+    background-image: url("../IMMAGINI/back.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #eeffe6;
+    color: #000;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+#NotTheFooter {
+    padding-bottom: 14em;
+}
+
+#CentralBody {
+padding-top: 0.1em;
+}
+
+legend {
+    display: none;
+}
+
+/* footer */
+
+#Footer {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    height: 12em;
+    border-top: 0.1em solid #c5cbe3;
+    text-align: center;
+}
+
+#ChiSiamo, #Informazioni {
+    width: 25%;
+    float: left;
+}
+
+#Social {
+    width: 25%;
+    float: right;
+}
+
+
+#ChiSiamo {
+    padding-left: 2em;
+    padding-right: 4em;
+}
+
+.FooterTitle {
+    font-weight: 800;
+}
+
+#Informazioni {
+    padding-left: 4em;
+}
+
+.FooterInfos {
+    margin: 0.4em;
+}
+
+#Social {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#SocialIcons {
+    display: inline-block;
+}
+
+#fb-icon, #g-icon, #tw-icon {
+    width: 4em;
+    height: 4em;
+}
+
+/* header */
+
+#HeaderContainer {
+    height: 7em;
+    top: 0;
+    bottom: 0;
+}
+
+/* container per il logo e il titolo */
+
+#HeaderContainer img{
+    float: left;
+    width: 15%;
+    margin: 0;
+}
+
+#LogoTitle {
+    float: left;
+    width: 65%;
+}
+
+/* titolo dell'header */
+
+#LogoTitle p {
+    width: 80%;
+    float: right;
+    margin-left: 2%;
+    font-weight: 800;
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0.0125em 0 0 #f13c20, -0.0125em 0 0 #f13c20, 0 0.0125em 0 #f13c20, 0 -0.0125em 0 #f13c20, 0.05em 0.05em #f13c20, -0.05em -0.05em 0 #f13c20, 0.05em -0.05em 0 #f13c20, -0.05em 0.05em 0 #f13c20; /* per fare il bordo al testo */
+}
+
+/* container per accedi, registrati e la barra di ricerca */
+
+#LogRegRic{
+    padding-top: 2em;
+    float: right;
+    display: inline-block;
+    width: 35%;
+}
+
+/* accedi e registrati */
+
+#RegLink, #LoginLink {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 0;
+    text-transform: uppercase;
+}
+
+#LoginLink:hover, #RegLink:hover {
+    opacity: 0.3;
+}
+
+/* container per la barra di ricerca */
+
+#SearchContainer {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+/* input della barra di ricerca */
+
+#SearchContainer input{
+    font-size: 0.9em;
+    width: 80%;
+    border-radius: 0.5em;
+    padding: 0.2em 0 0.2em 0;
+}
+
+/* bottone con la lente */
+
+#SearchContainer button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    vertical-align: sub;
+}
+
+#SearchContainer img{
+    height: 2em;
+    width: 2em;
+}
+
+#SearchContainer img:hover {
+    opacity: 0.5;
+}
+
+#SearchContainer fieldset {
+    float: right;
+    width: 100%;
+    margin: 0;
+}
+
+/* Login page e registration page */
+
+.Container { /* container per il form */
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 5% auto 5% auto;
+}
+
+.ContainerTitle {
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.0125em 0 0 #f13c20, -0.0125em 0 0 #f13c20, 0 0.0125em 0 #f13c20, 0 -0.0125em 0 #f13c20, 0.05em 0.05em #f13c20, -0.05em -0.05em 0 #f13c20, 0.05em -0.05em 0 #f13c20, -0.05em 0.05em 0 #f13c20;/* per fare il bordo al testo*/
+}
+
+/* frasi per le regole */
+
+.RegistrationSentence {
+    text-align: center;
+    font-weight: 300;
+}
+
+#LockImage { /* lock image della login page */
+    width: 15%;
+    height: 15%;
+    margin-left: 42.5%;
+}
+
+.Container input, .Container label { /* input e label */
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.Container label { /* label */
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.Container input { /* input */
+    margin-bottom: 2.3%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: none;
+    border-bottom: solid 0.2em;
+    border-bottom-color: #747474;
+    background-color: transparent;
+}
+
+.Buttons {
+    display: flex;
+}
+
+.Buttons button {
+    width: 46%;
+    height: 2.5em;
+    margin-top: 10%;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 40em;
+}
+
+.Buttons button:hover{
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+/* submit button del form */
+
+#ConfirmButton, #ConfirmButtonR {
+    background-color: #f13c20;
+    border-color: #f13c20;
+}
+
+.ResetButton {
+    background-color: #dfdfdf;
+    margin-left: 1.5em;
+}
+
+/*general menu*/
+
+#HeaderMenu {
+    display: inline-block;
+    width: 100%;
+    height: 3em;
+    background-color: #c5cbe3;
+}
+
+#HeaderMenu img{
+    display: none;
+}
+
+#HeaderMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#HeaderMenu ul li {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.5em;
+    font-size: 1.2em;
+    display: inline;
+    float: left;
+    height: 2em;
+    border-right: solid 0.1em #66b3ff;
+}
+
+#HeaderMenu ul li:hover {
+    background-color: #747474;
+}
+
+#HeaderMenu ul li a {
+    text-decoration: none;
+}
+
+#NoClickItem {
+    background-color: #f13c20;
+    border-right: none;
+}
+
+/* breadcrumb */
+
+#Breadcrumb {
+    width: 100%;
+    padding: 0em;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+}
+
+#Breadcrumb p{
+    margin: 0em;
+    margin-bottom: 0.5em;
+}
+
+/*chi siamo*/
+
+#WhoAre p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#Ready{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#WhoAre img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*pagina spiegazione noleggio*/
+
+.RentalRule{
+    margin-top: 0.5em;
+    text-align: justify;
+}
+
+.RentalRule h3{
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+.RentalRule p{
+    margin-bottom: 1em;
+    margin-top: 0em;
+    font-size: 1.2em;
+}
+
+/*pagina aggiunta e modifica videogioco*/
+
+.AddModifyItem {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.AddModifyItem label, .AddModifyItem input,.AddModifyItem select{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.AddModifyItem input{
+    border-radius: 0.5em;
+    border: none;
+    font-family: sans-serif;
+}
+
+.AddModifyItem label, .AddModifyItem p {
+    width: 100%;
+}
+
+.AddModifyItem #QXbox360, #QXboxOne, #QWii, #QWiiU, #QSwitchN, #QPlayStation3, #QPlayStation4{
+    margin-left: 0.2%;
+}
+
+.AddModifyItem #VideogameName, #VideogameKind{
+    width: 50%;
+}
+
+.AddModifyItem #VideogameNameA, #VideogameKindA{
+    width: 50%;
+}
+
+.AddModifyItem textarea{
+    margin-top: 0.4em;
+    width: 80%;
+    height: auto;
+    font-family: sans-serif;
+}
+
+#VidDescription{
+    margin-top: 0.4em;
+    display: block;
+}
+
+select{
+    border-radius: 0.5em;
+    border: none;
+}
+
+.AddModifyItem label+input{ /*con il + dico di prendere la label e quello che ha dopo, è il selettore di adiacenza*/
+    display:block;
+}
+
+.AddModifyItem select+label{
+    display: block;
+}
+
+.NotAll{
+    padding-top: 0.2em;
+    border-top-style: solid;
+}
+
+.AddModifyItem label+textarea {
+    display: block;
+}
+
+/*pagina utente*/
+
+#AccountPage {
+    border: solid 0.07em #999999;
+    margin-top: 1em;
+}
+
+#AccountPage h2 {
+    text-transform: uppercase;
+}
+#AccountPage input {
+    border-radius: 0.5em;
+}
+
+#AccountChangeEmail {
+    width: 15%;
+}
+
+#AccountPage button{
+    border-radius: 0.5em;
+}
+
+#AccountPage label+input {
+    display: block;
+}
+
+#DeleteAccount {
+    border-radius: 0.5em;
+}
+
+/*pagina modifica prenotazione*/
+
+#ModifyPrenotation {
+    padding-bottom: 3em;
+}
+
+#ModifyPrenotation label+input{
+    display: block;
+}
+
+#ModifyPrenotation fieldset {
+    border: solid 0.07em #999999;
+    margin-top: 1em;
+    padding-bottom: 10em;
+}
+
+#ModifyPrenotation input{
+    width: 40%;
+}
+
+#ModifyPrenotation input:nth-of-type(7) {
+    width: auto;
+}
+
+#ModifyPrenotation input:nth-of-type(8) {
+    width: auto;
+}
+
+/*pagina bestseller*/
+
+#BestsellerHome {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.Bestseller img {
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+#BestsellersContainer {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+}
+
+.Bestseller {
+    display: inline-block;
+    width: 33%;
+    padding-bottom: 3em;
+    height: 25em;
+}
+
+/*Div link per home/per tornare indietro*/
+
+.ArrowBack {
+    float: left;
+    width: 2em;
+    height: 1em;
+}
+
+.LinkHome {
+    margin-top: 0.5em;
+}
+
+/*pagina 404*/
+
+#Error404 p {
+    width: 50%;
+}
+
+#Robot{
+    width: 15em;
+    height: 25em;
+}
+
+/* menu selezione console */
+
+.SubMenu {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.SubMenu fieldset {
+    border: solid 0.07em #999999;
+}
+
+.SubMenu button {
+    height: 5%;
+    font-weight: 700;
+    border-radius: 1.5em;
+}
+
+/* lista videogiochi catalogo */
+
+#ListVideogame {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#ListVideogame dt {
+    font-weight: 700;
+}
+
+/*menù scelta sony,microsoft,nintendo*/
+
+#BrandHome {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.Brand img{
+    width: 100%;
+    height: auto;
+    float: left;
+    min-height: 9em;
+    max-height: 9em;
+}
+
+#BrandContainer{
+    list-style-type: none;
+    display: block;
+    padding-left: 0em;
+}
+
+.Brand {
+    display: inline-block;
+    width: 24em;
+    padding-bottom: 0.5em;
+    padding-top: 0em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+/*pagina errore connessione database per query*/
+
+#ErrorPage {
+    background-color: #efe2ba;
+}
+
+#ErrorPage img {
+    float: left;
+    width: 5%;
+    height: 5%;
+}
+
+/* tabella prenotazioni */
+
+table {
+    text-align: left;
+    width: 100%;
+    padding: 2em;
+    border-collapse: collapse;
+}
+
+table button {
+    border-radius: 0.5em;
+}
+
+th {
+    font-size: 1.1em;
+    padding: 0.5em;
+    background-color: #f13c20;
+    color: #fff;
+    border-left: 0.05em solid #999999;
+}
+
+td {
+    padding-left: 0.5em;
+    border: 0.05em solid #999999;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+fieldset {
+    border: none;
+    padding: 0.1em;
+    margin-bottom: 1em;
+}
+
+/*pagina videogioco*/
+
+#VideogamePage {
+    font-size: 1.2em;
+    overflow: auto;
+}
+
+#VideogamePage fieldset {
+    margin-top: 0.5em;
+}
+
+#VideogamePage button {
+    border-radius: 0.5em;
+}
+
+#VideogamePage img {
+    max-width: 20em;
+    max-height: 20em;
+    float: left;
+    padding-right: 2em;
+}
+
+#VideogamePage p {
+    text-align: justify;
+}
+
+.VideogameTitles {
+    font-weight: bold;
+}
+
+#VideogamesList {
+    text-align: left;
+}
+
+#VideogamesList dt {
+    padding-top: 1em;
+}
